@@ -10,8 +10,11 @@ Step 2: from terminal continue this command.
 mysql -u root -p
 
 CREATE DATABASE wordpress CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
 GRANT ALL ON wordpress.* TO 'wordpressuser'@'localhost' IDENTIFIED BY 'change-with-strong-password';
+
 FLUSH PRIVILEGES;
+
 EXIT;
 
 
